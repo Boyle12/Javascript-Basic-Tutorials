@@ -17,53 +17,21 @@
 </head>
 <body>
   <script>
-    // Make function and use return 
-    function myFuctionA(x,y){ //x and y are formal argument/parameter.
+    // Array
+    let students=['Anil',"Abhinav",'kaushal',"Pandey"]
+    //console.log('Hello '+students[1]+ ', How are you?');
+    //alert(`Hello `+students[1])
 
-      //Fuction body
-      return x+y;
-      }
-      // Fuction calling
-      let result = myFuctionA(10,20);
-      console.log(result);
-    
-      // function ke andar fuction ko pass krna mtlb (Fuction as Argument kaha jata h)
-      let r2 = myFuctionA(10,myFuctionA(10,20));
-      console.log(r2);
-
-    // create Function from A to Z Deep nested calling
-
-    function yourFunctionC(x,y){
-      return x*y;
-
-    }
-    let result1 = yourFunctionC(10,yourFunctionC(10,10));
-    console.log(result1);
-
-
-    function yoursFunctionB(x,y){
-      return x-y;
-
-    }
-    let result3 = yoursFunctionB(199,yoursFunctionB(10,9));
-    console.log(result3);
-
-    function yrrFunctionD(){
-      return 10;
+    //function defination:
+    function greet(m){
+      console.log('Hello '+ m +' How are you ?');
     }
 
-    function yrrFunctionF(){
-      return 20;
+    //function calling
+    for(i=0;i<=3;i++){
+      greet(students[i]);
     }
 
-    function yrrFunctionG(x,y){
-      return x+y;
-    }
-
-    // function as argument
-
-    let result5 =yrrFunctionG(yrrFunctionD(),yrrFunctionF());
-    console.log(result5);
   </script>
 </body>
 </html>
