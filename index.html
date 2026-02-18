@@ -17,20 +17,45 @@
 </head>
 <body>
   <script>
-    // Array
-    let students=['Anil',"Abhinav",'kaushal',"Pandey"]
-    //console.log('Hello '+students[1]+ ', How are you?');
-    //alert(`Hello `+students[1])
+    // modern way of writting function 
+    // 1. function defination
+    // This wriiten method is know as Fat arrow function
+    //let myFunctionc=(name)=>{
+      //console.log('My name is :'+name+'');
+    //}
+    
+    // 2. function calling
+    //myFunctionc(' Abhinav');
 
-    //function defination:
-    function greet(m){
-      console.log('Hello '+ m +' How are you ?');
-    }
+    // spread operator
+    //let a =['Anil', 'Abhinav','you'];
+    //console.log(a);
+    // find array length
+    // formula: object.length
+    //console.log(a.length);
+    
+    //let b=[...a, 'Ravi',"Satyam",'Shivam'];
+    //console.log(b);
 
-    //function calling
-    for(i=0;i<=3;i++){
-      greet(students[i]);
+    // A software developer from India. print it
+    let c=['A'];
+    let d=[...c,'software'];
+    let e=[...d,'developer'];
+    let f=[...e,'from'];
+    let g=[...f,'India'];
+    console.log(g);
+
+    var paragraph='';
+    for(var i=0;i<g.length;i++){
+      console.log(g);
+
+      paragraph = (paragraph + g[i] + ' ');
+
     }
+    console.log(paragraph);
+    
+    // output: A software developer from India 
+    
 
   </script>
 </body>
