@@ -17,45 +17,28 @@
 </head>
 <body>
   <script>
-    // modern way of writting function 
-    // 1. function defination
-    // This wriiten method is know as Fat arrow function
-    //let myFunctionc=(name)=>{
-      //console.log('My name is :'+name+'');
-    //}
-    
-    // 2. function calling
-    //myFunctionc(' Abhinav');
-
-    // spread operator
-    //let a =['Anil', 'Abhinav','you'];
-    //console.log(a);
-    // find array length
-    // formula: object.length
-    //console.log(a.length);
-    
-    //let b=[...a, 'Ravi',"Satyam",'Shivam'];
-    //console.log(b);
-
-    // A software developer from India. print it
-    let c=['A'];
-    let d=[...c,'software'];
-    let e=[...d,'developer'];
-    let f=[...e,'from'];
-    let g=[...f,'India'];
-    console.log(g);
-
-    var paragraph='';
-    for(var i=0;i<g.length;i++){
-      console.log(g);
-
-      paragraph = (paragraph + g[i] + ' ');
+    // object:
+    var student={
+      name:"Abhinav",
+      surname:'Kaushal',
+      friends:['Ram','Arman','shyam'],
+      teacher:[{
+        name:"Tripathi sir",
+        contact:'2789440083',
+      },{
+        name:'Ramesh singh',
+        contact:'36828929'
+      }]
+    }
+    console.log(student.name);
+    alert(student.surname);
+    console.log(student.friends.length);
+    console.log(student.name +' have '+ student.friends.length +' friends');
+    console.log(student.name +' have '+ student.teacher.length +' teachers');
+    for(i=0;i<student.teacher.length;i++){
+      console.log(student.teacher[i].name,student.teacher[i].contact);
 
     }
-    console.log(paragraph);
-    
-    // output: A software developer from India 
-    
 
   </script>
 </body>
