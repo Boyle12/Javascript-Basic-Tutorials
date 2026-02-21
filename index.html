@@ -17,29 +17,67 @@
 </head>
 <body>
   <script>
-    // object:
-    var student={
-      name:"Abhinav",
-      surname:'Kaushal',
-      friends:['Ram','Arman','shyam'],
-      teacher:[{
-        name:"Tripathi sir",
-        contact:'2789440083',
-      },{
-        name:'Ramesh singh',
-        contact:'36828929'
-      }]
-    }
-    console.log(student.name);
-    alert(student.surname);
-    console.log(student.friends.length);
-    console.log(student.name +' have '+ student.friends.length +' friends');
-    console.log(student.name +' have '+ student.teacher.length +' teachers');
-    for(i=0;i<student.teacher.length;i++){
-      console.log(student.teacher[i].name,student.teacher[i].contact);
+    /* for loop advance version, which is use in market for less error is:
+    
+    1. forEach(element =>{
 
-    }
+       })
 
+    2.for(variable of itterable){
+      
+      }
+    */
+    let x = {
+                //Members
+                //1. Property:Value
+                //2. Functions/Methods
+
+        name:"Anil",
+        surname:"DOLLOR",
+        this:'Abhinav',
+        myFuncA:function(){ // formal arguments
+                
+
+
+        //Function Defination
+        //Function body
+
+        //console.log(x.this); // this = self = current object
+        //object.member
+        // this is a current  js object
+        //console.log('My name is '+x.this);
+        },
+        myFuncB:()=>{
+
+        },
+        myFuncC:function(){
+
+        }
+
+        };// x is an JS OBject
+
+        //object.member
+        console.log(x.myFuncA());
+
+        let y = [{ // Array of object
+        //1. Property:value
+        name:"Anil",
+        address:"Neemuch MP INDIA",
+        "friends":['A',"B",'c',"D"]
+        }];
+
+        let z = ['A',"B",'c',"D",...y];
+        z.forEach(element =>{
+          console.log('My friend is '+element);
+        })
+
+        let teachers=['AA','BB','CC']
+
+        for(teacher of teachers){
+          console.log('My teacher is: '+teacher);
+        }
+        
+      
   </script>
 </body>
 </html>
